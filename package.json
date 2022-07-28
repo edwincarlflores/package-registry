@@ -1,0 +1,18 @@
+{
+  "name": "package-registry",
+  "version": "1.0.0",
+  "description": "NPM private registry built with verdaccio",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Edwin Carl Flores",
+  "license": "ISC",
+  "dependencies": {
+    "verdaccio": "^5.13.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
