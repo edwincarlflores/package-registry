@@ -1,6 +1,6 @@
 const { runServer } = require("verdaccio");
 
-const PORT = process.env.ENV_PORT || 4000;
+const PORT = process.env.PORT || 4000;
 
 runServer("./config.yml").then((app) => {
   app.listen(PORT, (event) => {
