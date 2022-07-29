@@ -29,3 +29,6 @@ yarn-error.log*
 
 # verdaccio storage files
 /storage
+
+# verdaccio users
+htpasswd

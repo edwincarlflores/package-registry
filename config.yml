@@ -55,6 +55,7 @@ auth:
     # Maximum amount of users allowed to register, defaults to "+inf".
     # You can set this to -1 to disable registration.
     # max_users: 1000
+    max_users: -1
     # Hash algorithm, possible options are: "bcrypt", "md5", "sha1", "crypt".
     # algorithm: bcrypt # by default is crypt, but is recommended use bcrypt for new installations
     # Rounds number for "bcrypt", will be ignored for other algorithms.
@@ -75,7 +76,7 @@ packages:
     access: $all
     publish: $authenticated
     unpublish: $authenticated
-    proxy: npmjs
+    # proxy: npmjs
 
   "**":
     # allow all users (including non-authenticated users) to read and
@@ -91,7 +92,7 @@ packages:
     unpublish: $authenticated
 
     # if package is not available locally, proxy requests to 'npmjs' registry
-    proxy: npmjs
+    # proxy: npmjs
 
 # To improve your security configuration and  avoid dependency confusion
 # consider removing the proxy property for private packages
